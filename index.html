@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KingHardware2 - شرح تفصيلي للكمبيوتر</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>KingHardware2</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#cpu">المعالج - CPU</a></li>
+            <li><a href="#gpu">كرت الشاشة - GPU</a></li>
+            <li><a href="#ram">الذاكرة العشوائية - RAM</a></li>
+            <li><a href="#motherboard">اللوحة الأم - Motherboard</a></li>
+            <li><a href="#full">الشرح التفصيلي للكمبيوتر - Full PC Guide</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- CPU -->
+        <section id="cpu" class="component" onclick="openPopup('cpu')">
+            <h2>المعالج - CPU</h2>
+            <p>اضغط هنا لمشاهدة الفيديو التعليمي <br>Click here for video tutorial</p>
+            <img src="images/CPU.jpg" alt="CPU Image" class="component-img">
+        </section>
+
+        <!-- GPU -->
+        <section id="gpu" class="component" onclick="openPopup('gpu')">
+            <h2>كرت الشاشة - GPU</h2>
+            <p>اضغط هنا لمشاهدة الفيديو التعليمي <br>Click here for video tutorial</p>
+            <img src="images/GPU.jpg" alt="GPU Image" class="component-img">
+        </section>
+
+        <!-- RAM -->
+        <section id="ram" class="component" onclick="openPopup('ram')">
+            <h2>الذاكرة العشوائية - RAM</h2>
+            <p>اضغط هنا لمشاهدة الفيديو التعليمي <br>Click here for video tutorial</p>
+            <img src="images/RAM.jpg" alt="RAM Image" class="component-img">
+        </section>
+
+        <!-- Motherboard -->
+        <section id="motherboard" class="component" onclick="openPopup('motherboard')">
+            <h2>اللوحة الأم - Motherboard</h2>
+            <p>اضغط هنا لمشاهدة الفيديو التعليمي <br>Click here for video tutorial</p>
+            <img src="images/Motherboard.jpg" alt="Motherboard Image" class="component-img">
+        </section>
+
+        <!-- Full PC Detailed Section -->
+        <section id="full" class="component full-guide">
+            <h2>الشرح التفصيلي للكمبيوتر - Full PC Guide</h2>
+            <p>الكمبيوتر يتكون من عدة مكونات رئيسية كل واحدة لها وظيفتها الخاصة. <br>
+               A computer consists of several main components, each with its own function.</p>
+            
+            <h3>المعالج - CPU</h3>
+            <p>المعالج هو العقل الرئيسي للكمبيوتر ويقوم بتنفيذ جميع العمليات الحسابية والمنطقية. <br>
+               The CPU is the brain of the computer, executing all arithmetic and logical operations.</p>
+            <ul>
+                <li>أنوية (Cores): تقوم بتنفيذ التعليمات - Execute instructions.</li>
+                <li>وحدة الحساب والمنطق (ALU): تنفذ العمليات - Performs calculations.</li>
+                <li>ذاكرة الكاش (Cache): لتسريع الوصول للبيانات - Speeds up data access.</li>
+            </ul>
+
+            <h3>كرت الشاشة - GPU</h3>
+            <p>كرت الشاشة مسؤول عن الرسوميات والفيديوهات والألعاب. <br>
+               GPU is responsible for graphics, videos, and games.</p>
+            <ul>
+                <li>Shader Units: معالجة الرسوميات - Process graphics.</li>
+                <li>VRAM: تخزين مؤقت للصور والفيديوهات - Temporary storage of images/videos.</li>
+            </ul>
+
+            <h3>الذاكرة العشوائية - RAM</h3>
+            <p>RAM تخزن البيانات التي يستخدمها الكمبيوتر بشكل مؤقت. <br>
+               RAM stores data temporarily while computer is running.</p>
+            <ul>
+                <li>Memory Chips: تخزن البيانات - Store data.</li>
+                <li>Memory Controller: يدير القراءة والكتابة - Manages reading/writing data.</li>
+            </ul>
+
+            <h3>اللوحة الأم - Motherboard</h3>
+            <p>اللوحة الأم تربط جميع المكونات وتوزع الطاقة. <br>
+               Motherboard connects all components and distributes power.</p>
+            <ul>
+                <li>CPU Socket: مكان تثبيت المعالج - CPU slot.</li>
+                <li>RAM Slots: مكان تثبيت الذاكرة - RAM slots.</li>
+                <li>PCIe Slots: لتوصيل كروت الشاشة والأجهزة الأخرى - Expansion slots.</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Pop-up -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <div id="popup-text"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 KingHardware2. جميع الحقوق محفوظة - All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
